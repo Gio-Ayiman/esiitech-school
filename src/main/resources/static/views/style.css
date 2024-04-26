@@ -1,0 +1,32 @@
+body, .form-ecole {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-ecole > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-ecole {
+    gap: 15px;
+}
+
+button {
+    background: #5344bd;
+    padding: 8px 0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+button:hover {
+    background: #392e96;
+}

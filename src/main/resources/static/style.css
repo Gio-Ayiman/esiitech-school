@@ -1,0 +1,18 @@
+h1  {
+    color: red;
+}
+
+.centered-div {
+    width: 900px;
+    margin: 0  auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.form-ecole {
+     display: flex;
+    flex-direction: column;
+    
+}

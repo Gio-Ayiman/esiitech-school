@@ -4,10 +4,7 @@ import ga.esiitech.schoolapp.dtos.FiliereDto;
 import ga.esiitech.schoolapp.entities.Filiere;
 import ga.esiitech.schoolapp.services.FiliereService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/filieres")
@@ -21,6 +18,11 @@ public class FiliereController {
         filiereService.creerFiliere(filiereDto);
 
         return "Votre filiere "+ filiereDto.getNom() + "  a bien ete creee !";
+    }
+
+    @DeleteMapping("/{id}")
+    public void supprimerFiliere(@PathVariable("id") Long matiereId) {
+        filiereService.supprimerFiliere(matiereId);
     }
 
 }

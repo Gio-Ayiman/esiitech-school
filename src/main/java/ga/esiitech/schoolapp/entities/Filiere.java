@@ -19,7 +19,7 @@ public class Filiere {
 
     private String nom;
 
-    @OneToMany
+    @ManyToMany
     private List<Matiere> matieres;
 
     @ManyToOne
